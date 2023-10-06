@@ -1,0 +1,8 @@
+<suite name="ExcludeClassesSuite">
+    <test name="ExcludeClassesTest">
+        <classes>
+            <class name="tests.RealItemTest" />
+            <exclude name="tests.VirtualItemTest" />
+        </classes>
+    </test>
+</suite>
