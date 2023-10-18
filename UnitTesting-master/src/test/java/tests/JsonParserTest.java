@@ -86,7 +86,7 @@ public class JsonParserTest {
     @Test (groups = { "jsonParserTests" })
     public void testReadAndrewCartFromFile() {
         // Specify the file path for andrew-cart.json
-        String filePath = "src/test/resources/andrew-cart.json";
+        String filePath = "src/main/resources/andrew-cart.json";
 
         // Read the Cart object from the file
         Cart parsedCart = jsonParser.readFromFile(new File(filePath));
@@ -104,7 +104,7 @@ public class JsonParserTest {
     @Test (groups = { "jsonParserTests" })
     public void testReadEugenCartFromFile() {
         // Specify the file path for eugen-cart.json
-        String filePath = "src/test/resources/eugen-cart.json";
+        String filePath = "src/main/resources/eugen-cart.json";
 
         // Read the Cart object from the file
         Cart parsedCart = jsonParser.readFromFile(new File(filePath));
