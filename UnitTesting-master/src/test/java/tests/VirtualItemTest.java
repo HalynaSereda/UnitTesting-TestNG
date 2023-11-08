@@ -20,7 +20,7 @@ public class VirtualItemTest {
     }
 
     @Test
-    @Parameters({ "name", "price", "sizeOnDisk" })
+    @Parameters({ "itemSizeOnDisk" })
     public void testGetSizeOnDisk() {
         double expectedSizeOnDisk = 1024.0;
         double actualSizeOnDisk = virtualItem.getSizeOnDisk();
@@ -29,7 +29,7 @@ public class VirtualItemTest {
     }
 
     @Test
-    @Parameters({ "name", "price", "sizeOnDisk", "expectedToString" })
+    @Parameters({ "expectedToString" })
     public void testToString() {
         String expectedToString = "Class: class shop.VirtualItem; Name: Software; Price: 49.99; Size on disk: 1024.0";
 

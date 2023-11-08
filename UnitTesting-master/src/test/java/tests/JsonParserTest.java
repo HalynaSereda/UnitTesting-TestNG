@@ -19,12 +19,12 @@ public class JsonParserTest {
     private JsonParser jsonParser;
     private Cart cart;
 
-    @BeforeMethod
+    @BeforeMethod (groups = { "jsonParserTests" })
     public void setUp() {
         jsonParser = new JsonParser();
     }
 
-    @AfterMethod
+    @AfterMethod (groups = { "jsonParserTests" })
     public void tearDown() {
         //Delete temporary JSON files created during testing
         String[] tempFileNames = {
