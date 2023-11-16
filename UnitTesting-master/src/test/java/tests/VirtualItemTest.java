@@ -21,17 +21,15 @@ public class VirtualItemTest {
 
     @Test
     @Parameters({ "itemSizeOnDisk" })
-    public void testGetSizeOnDisk() {
-        double expectedSizeOnDisk = 1024.0;
+    public void testGetSizeOnDisk(double itemSizeOnDisk) {
         double actualSizeOnDisk = virtualItem.getSizeOnDisk();
 
-        assertEquals(actualSizeOnDisk, expectedSizeOnDisk, 0.01);
+        assertEquals(actualSizeOnDisk, itemSizeOnDisk, 0.01);
     }
 
     @Test
     @Parameters({ "expectedToString" })
-    public void testToString() {
-        String expectedToString = "Class: class shop.VirtualItem; Name: Software; Price: 49.99; Size on disk: 1024.0";
+    public void testToString(String expectedToString) {
 
         String actualToString = virtualItem.toString();
 

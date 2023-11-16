@@ -3,7 +3,7 @@
         <parameter name="itemName" value="Software" />
         <parameter name="itemPrice" value="49.99" />
         <parameter name="itemSizeOnDisk" value="1024.0" />
-        <parameter name="expectedToString" value="" />
+        <parameter name="expectedToString" value="Class: class shop.VirtualItem; Name: Software; Price: 49.99; Size on disk: 1024.0" />
 
         <classes>
             <class name="tests.VirtualItemTest" />
