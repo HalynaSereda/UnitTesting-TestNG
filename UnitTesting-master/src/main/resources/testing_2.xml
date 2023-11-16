@@ -1,0 +1,12 @@
+<suite name="GroupingSuite">
+    <test name="GroupingTest">
+        <groups>
+            <run>
+                <include name="jsonParserTests" />
+            </run>
+        </groups>
+        <classes>
+             <class name="tests.JsonParserTest" />
+        </classes>
+    </test>
+</suite>

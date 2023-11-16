@@ -1,0 +1,8 @@
+<suite name="IncludeClassesSuite">
+    <test name="IncludeClassesTest">
+        <classes>
+            <class name="tests.JsonParserTest" />
+            <class name="tests.CartTest" />
+        </classes>
+    </test>
+</suite>
